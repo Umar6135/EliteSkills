@@ -763,8 +763,12 @@ svg * {
 
 
 #AboutUs {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding-top: 200px;
+    position: relative;
 }
 #aboutus-content{
     text-align: center;
@@ -798,8 +802,133 @@ svg * {
 .aboutus-content p{
     color: #181818;
     font-size: 1.42vw;
-    margin-top: 40px;
+    margin: 40px 0px;
 }
+
+#AboutUs .AboutLeftImg{
+    max-width: 60vw;
+    height: 90vh;
+    object-fit: cover;
+    position: absolute;
+    top: 4vh;
+    left: 0%;
+}
+
+#AboutUs .AboutRightImg{
+    max-width: 30vw;
+    object-fit: cover;
+    position: absolute;
+    top: 35vh;
+    right: 0%;
+}
+
+/* About Program */
+
+#AboutUs .aboutProgram{
+    width: 100vw;
+    background: #E8E8E8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2vw;
+    & h2{
+        text-align: center;
+        font-size: 2.5vw;
+    }
+    & .programBtn{
+        font-size: 1.5vw;
+        font-weight: 300;
+        color: #fff;
+        background-color: #000;
+        padding: 0.5vw 2vw;
+        border-radius: 10px;
+    }
+}
+
+#AboutUs .programsConatiner{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    padding: 5vh 0vh;
+}
+
+.programsItem{
+    max-height: 20vh;
+    max-width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5vh;
+    & .programImage{
+        max-width: 7vw;
+        object-fit: cover;
+    }
+    & .programTitle{
+        font-size: 1.5vw;
+        font-weight: 600;
+        color: #000;
+        text-transform: uppercase;
+    }
+    & .programDescription{
+        padding: 0.5vh 0vh;
+        text-align: center;
+        font-size: 1.2vw;
+    }    
+}
+
+/* About Value */
+
+#AboutUs .aboutValue{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vh;
+    margin: 4vw;
+    & h2{
+        text-align: center;
+        font-size: 2.5vw;
+    }
+    & p{
+        text-align: center;
+        font-size: 1.5vw;
+        max-width: 45vw;
+    }
+}
+
+/* About Story */
+
+#AboutUs .aboutStory{
+    width: 100vw;
+    background: #E8E8E8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vh;
+    padding: 2vw;
+    & h2{
+        text-align: center;
+        font-family: 'Aquire';
+        font-size: 1.5vw;
+        color: #000;
+    }
+    & .StoryImg{
+        width: 60vw;
+        height: 20vh;
+        background-color: #000
+    }
+    & img{
+        width: 100vw;
+        object-fit: cover;
+    }
+}
+
 
 
 .champions {
@@ -2129,7 +2258,7 @@ header .langsContainer a {
 }
 
 .mainBackground+.mainContainer {
-    z-index: 1
+    z-index: 2
 }
 
 .text {
