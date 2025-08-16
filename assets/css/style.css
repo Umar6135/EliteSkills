@@ -762,9 +762,12 @@ svg * {
   font-size: 6vw;
   color: #ffffff;
   justify-content: center;
+  z-index: 6;
+  position: relative;
 }
 
 #AboutUs .mainBackground {
+  z-index: 5;
   max-height: 350px;
 }
 
@@ -9136,18 +9139,33 @@ input[type=checkbox] {
   font-weight: 500;
   background-color: #000;
   gap: 5vh;
-  padding: 5vh 0vh;
+  padding: 5vh 0vh; 
   color: #fff;
 }
+
 .BasketBallContent h2 {
   font-size: 2vw;
+  color: #ffffff28;
+  transition: color 3s ease;
 }
+
+.BasketBallContent h2.in-view{
+  color: #fff;
+}
+
 .BasketBallContent p {
   font-size: 2vw;
   line-height: 6vh;
   max-width: 90vw;
+  color: #ffffff28;
   text-align: center;
+  transition: color 3s ease;
 }
+
+.BasketBallContent p.in-view {
+  color: #fff;
+}
+
 .BasketBallContent h3 {
   margin-top: 7vh;
   font-size: 2vw;
@@ -9294,6 +9312,10 @@ input[type=checkbox] {
 .ArtGallery {
   max-width: 100vw;
   padding: 0vw 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .artGalleryHeader {
@@ -9324,4 +9346,26 @@ input[type=checkbox] {
   display: flex;
   justify-content: center;
   align-items: center;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.galleryImagesContainer{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10vh;
+  overflow-x: scroll;
+}
+
+.galleryImageItem{
+  max-width: 50vw;
+  max-height: 50vh;
+  position: relative;
+  overflow: hidden;
+  padding: 2vh 2vh;
+  border-radius: 0.5vw;
+  background-color: #373737;
+  & img{
+    max-width: 50vw;
+    max-height: 50vh;
+  }
+}
