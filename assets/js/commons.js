@@ -499,3 +499,15 @@ var windowWidth; var windowHeight; var $menuDark = !1; var $videoLoaded = !1; va
         })
     }
 })(jQuery)
+
+
+
+
+ document.querySelectorAll(".dropdown-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const dropdown = btn.nextElementSibling;
+      if (dropdown && dropdown.classList.contains("dropdown-container")) {
+        dropdown.style.display = dropdown.style.display === "none" ? "block" : "none";
+      }
+    });
+  });
