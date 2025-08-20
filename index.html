@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Elite Skills</title>
     <link rel="preload" as="font" href="./assets/fonts/AquireRegular.woff2" crossorigin>
+    <!-- <link rel="stylesheet" href="assets/css/rocket-critical.css">
+    <link rel="stylesheet" href="assets/css/style.css"> -->
     <style id="rocket-critical-css">
         body {
             color: #5C5C5C;
@@ -339,7 +341,7 @@
             height: 38px;
             top: 26px;
             left: 55px;
-            z-index: 1
+            z-index: 2;
         }
 
         #mainMenuController:after {
@@ -2803,12 +2805,12 @@
                 <h2>Our Programs</h2>
                 <div class="programsConatiner">
                     <div class="programsItem">
-                        <img class="programImage" src="./assets/img/download-removebg-preview.png" alt="basketball">
+                        <img class="programImage" src="./assets/img/basketball.png" alt="basketball">
                         <h3 class="programTitle">Basket Ball</h3>
                         <p class="programDescription">Premier Training and camps for young atheles</p>
                     </div>
                     <div class="programsItem">
-                        <img class="programImage" src="./assets/img/download-removebg-preview.png" alt="basketball">
+                        <img class="programImage" src="./assets/img/green-paint.png" alt="basketball">
                         <h3 class="programTitle">Art</h3>
                         <p class="programDescription">Premier Art programs inspiring creativity</p>
                     </div>
@@ -2991,7 +2993,8 @@
 
 
                         </div>
-                        <p class="champion-copy" data-letterize data-scroll data-scroll-repeat>
+                          <h2 class="fill-text">Text Fill With ScrollTrigger</h2>
+                        <p class="champion-copy text-fill" data-letterize data-scroll data-scroll-repeat>
                             ELITE SKILLS OFFERS A PREMIER BASKETBALL EXPERIENCE FOCUSED ON SKILL DEVELOPMENT, TEAMWORK,
                             AND GROWTH.
                             <br /><br />
@@ -3386,11 +3389,7 @@
 
             <div class="callerBottom" data-scroll data-scroll-repeat data-scroll-class="action"
                 data-scroll-call="headerToDark" data-scroll-offset="95%"></div>
-
-
-
         </section>
-
 
 
 
@@ -3606,20 +3605,35 @@
                         </div>
 
                     </div>
-
-
-
                 </div>
 
             </div>
 
             <div class="callerBottom mobileHidden" data-scroll data-scroll-repeat data-scroll-class="action"
                 data-scroll-call="headerToDark" data-scroll-offset="75%"></div>
-
-
-
         </section>
-
+        <section class="footerWrap" data-scroll-section>
+            <div class="mainContainer">
+                <footer class="footer">
+                    <div class="footer-container">
+                        <div class="footer-left">
+                            <a href="#"><i class="fa-solid fa-phone"></i> 347-696-1989</a>
+                            <a href="#"><i class="fa-solid fa-envelope"></i>INFO@ELITESKILLS.ORG</a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i>INSTAGRAM</a>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i>FACEBOOK</a>
+                        </div>
+                        <div class="footer-right">
+                            <a class="nav-item" href="#">BASKETBALL</a>
+                            <a class="nav-item" href="#">ART</a>
+                            <a class="nav-item" href="#">ABOUT US</a>
+                            <a class="nav-item" href="#">JOINT</a>
+                            <a class="nav-item" href="#">PRODUCTS</a>
+                            <a class="nav-item" href="#">CONTACT</a>
+                        </div>
+                </footer>
+            </div>
+                <div>
+        </section>
     </article>
     <nav class="has_transition_1000">
         <div class="overlayClose" id="menuClose">
@@ -3751,14 +3765,14 @@
                                         <div class="duration">
                                             July - August
                                         </div>
-                                        <svg
-                                            class="no_opacity oArrow fillColor has_transition_1500 transition_all"
+                                        <svg class="no_opacity oArrow fillColor has_transition_1500 transition_all"
                                             version="1.1" xmlns="http://www.w3.org/2000/svg"
                                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                             viewBox="0 0 14.37 14.37" style="enable-background:new 0 0 14.37 14.37;"
                                             xml:space="preserve">
                                             <use x="0" y="0" xlink:href="#buttonArrow" />
-                                        </svg></span></a>
+                                        </svg>
+                                    </span></a>
 
                             </div>
                         </div>
@@ -3767,8 +3781,8 @@
                                     class="block top_hidden has_transition_2000">Summer Camp</div>
                             <div class="navSectionItems">
 
-                                <a class="navItem urlManager block top_low has_transition_1500 d100" href="#">Week 1-10<span
-                                        class="subItem">
+                                <a class="navItem urlManager block top_low has_transition_1500 d100" href="#">Week
+                                    1-10<span class="subItem">
                                         <div class="duration">
                                             July - August
                                         </div>
@@ -3781,7 +3795,7 @@
                                             <use x="0" y="0" xlink:href="#buttonArrow" />
                                         </svg>
                                     </span></a>
-                                
+
 
                             </div>
                         </div>
@@ -3790,8 +3804,8 @@
                                     class="block top_hidden has_transition_2000">Day/Week Camp</div>
                             <div class="navSectionItems">
 
-                                <a class="navItem urlManager block top_low has_transition_1500 d100" href="#">Day Week Camp<span
-                                        class="subItem">
+                                <a class="navItem urlManager block top_low has_transition_1500 d100" href="#">Day Week
+                                    Camp<span class="subItem">
                                         <div class="duration">
                                             School Year
                                         </div>
@@ -3804,7 +3818,7 @@
                                             <use x="0" y="0" xlink:href="#buttonArrow" />
                                         </svg>
                                     </span></a>
-                               
+
 
                             </div>
                         </div>
@@ -3954,6 +3968,8 @@
             font-display: swap;
         }
     </style>
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
 
 
     <link rel='preload' href='./assets/css/locomotive-scroll.min.css' data-rocket-async="style" as="style"
@@ -3987,7 +4003,7 @@
             }
         }, !1)</script>
     <script data-no-minify="1" async src="./assets/js/lazyload.min.js"></script>
-
+     <script src="https://kit.fontawesome.com/4cf7297191.js" crossorigin="anonymous"></script>
 
 
 
